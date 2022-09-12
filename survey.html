@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylessurv.css">
+	<title>My Melody's Little Survey</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monofett&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+  <div id="all">
+    <h1 id="title"><span class="title">My Melody's</span> <span class="title">Little Survey</span></h1>
+	<br>
+    <header id="header">
+	  
+	  <!-- MY MELODY HEADER IMAGE -->
+	  <div id="My-Melody">
+	    <div class="mymelo-head">
+		  <div class="head"></div>
+		  <div class="ear left"></div>
+		  <div class="ear right"></div>
+		  <div class="face">
+		    <div class="eye left">
+			  <div class="eyelid left"></div>
+			</div>
+		    <div class="eye right">
+			  <div class="eyelid right"></div>
+			</div>
+			<div class="nose"></div>
+		  </div>
+		  <div class="flap left"></div>
+		  <div class="flap right"></div>
+		</div>
+	  </div>
+	  <!-- MY MELODY ENDS -->
+	  
+      <p id="description">Thank you for helping My Melody become even cuter!</p>
+    </header>
+    <main id="main">
+      <form id="survey-form">
+	    <section id="info">
+          <label id="name-label">Name: 
+            <input id="name" type="text" placeholder="Enter your name" required />
+          </label>
+          <label id="email-label">Email: 
+            <input id="email" type="email" placeholder="Enter your email" required />
+          </label>
+          <label id="number-label">Age: 
+            <input id="number" type="number" min="10" max="120" placeholder="Enter your age"/>
+          </label>
+		</section>
+		<section id ="yes-no">
+		<p>Do you like My Melody?</p>
+		<label id="yes">
+		<input type="radio" name="answer" value="1" required> Yes
+		</label>
+		<label id="no">
+        <input type="radio" name="answer" value="2"required> No
+		</label>
+		</section>
+		<br>
+		<section id="favorite-things">
+		<p>What is your favorite thing about My Melody?</p>
+		<br>
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">her ears</option>
+          <option value="2">her roundness</option>
+		  <option value="3">her kindness</option>
+        </select>
+		</section>
+		<br>
+		<section id="improve">
+		<p>What would you like to improve in My Melody?</p>
+		<label id="pink">
+          <input type="checkbox" value="1" name="change"/> Make her more pink
+		</label>
+		<label id="smile">
+        <input type="checkbox" value="2" name="change"/>Give her a wider smile
+		</label>
+		<label id="outfits">
+		  <input type="checkbox" value="3" name="change"/>Give her more different outfits
+		</label>
+		</section>
+		<br>
+        <section id="end">
+        <p>Additional feedback:
+        <textarea placeholder="Give us your feedback..."></textarea>
+
+        <input type="submit" id="submit" />
+		</section>
+
+      </form>
+    </main>
+	</div>
+
+
+  </body>
+</html>

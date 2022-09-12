@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Spirax" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+ <style>
+      div.gallery {
+     border: 1px solid #ccc;
+
+   }
+   div.gallery:hover {
+     border: 3px solid pink;
+   }
+   div.gallery img {
+     width: 100%;
+     height: auto;
+     box-shadow: 10px 10px 5px grey;
+
+   }
+   div.desc {
+     padding: 15px;
+     text-align: center;
+   }
+   * {
+     box-sizing: border-box;
+   }
+   .responsive {
+     padding: 0 6px;
+     float: left;
+     width: 24.99999%;
+   }
+   @media only screen and (max-width: 700px) {
+     .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+     }
+   }
+   @media only screen and (max-width: 500px) {
+     .responsive {
+        width: 100%;
+     }
+   }
+   .clearfix:after {
+       content: "";
+       display: table;
+       clear: both;
+   }
+  </style> 
+ </head>
+ <body>
+
+   <div class="header">
+     <h1> Kuvagalleria </h1>
+   </div>
+
+   <div class="row">
+
+    <div class="col-3 col-s-3 menu">
+      <ul>
+       <a href="index.html"><li> Etusivu </li></a>
+       <a href="sivu1.html"><li> Palstat </li></a>
+       <a href="sivu2.html"><li> Kuvagalleria </li></a>
+       <a href="sivu3.html"><li> Videot </li></a>
+      </ul>
+	  <div class="aside">
+       <p> Espanjalainen Salvador Dali on yksi kuuluisimpia surrealistisia taiteilijoita.
+	   <p> <img src="kuva2.jpg" width="460" height="345">
+     </div>
+    </div>
+
+    <div class="col-9 col-s-9">
+    <div class="responsive">
+     <div class="gallery">
+      <a target="_self" href="kuva4.html" id="kohta2">
+        <img src="kuva4.jpg" alt="Trolltunga Norway" width="auto" height="100%">
+      </a>
+      <div class="desc"> rose garden </div>
+     </div>
+    </div>
+
+    <div class="responsive">
+     <div class="gallery">
+      <a target="_self" href="kuva5.html" id="kohta2">
+         <img src="kuva5.jpg" alt="Forest" width="600" height="600">
+      </a>
+      <div class="desc"> enigma my desire </div>
+     </div>
+    </div>
+
+    <div class="responsive">
+     <div class="gallery">
+      <a target="_self" href="kuva3.html" id="kohta2">
+        <img src="kuva3.jpg" alt="Northern Lights" width="600" height="400">
+      </a>
+      <div class="desc"> birb </div>
+     </div>
+    </div>
+
+    <div class="responsive">
+     <div class="gallery">
+      <a target="_self" href="kuva6.html" id="kohta2">
+        <img src="kuva6.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc"> trippy trevor </div>
+     </div>
+    </div>
+
+    <div class="clearfix"></div>    </div>
+
+<!--
+    <div class="col-3 col-s-12">
+     <div class="aside">
+       <h2> Otsikko 1 </h2>
+       <p> Browse landscape pictures from around the world </p>
+       <h2> Otsikko 2 </h2>
+       <p> Browse landscape pictures from around the world </p>
+       <h2> Otsikko 3 </h2>
+       <p> Browse landscape pictures from around the world </p>
+     </div>
+    </div>
+	-->
+
+   </div>
+
+   <div class="footer">
+     <p>Kaikki tämän sivuston kuvat ovat ilmaisia ja vapaita sekä henkilökohtaiseen, että kaupalliseen käyttöön.</p>
+   </div>
+
+ </body>
+</html>
+   
